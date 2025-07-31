@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div class="social">
+		<a href="#" class="facebook" title="Facebook"><i class="fab fa-square-facebook"></i></a>
+		<a href="#" class="whatsapp" title="WhatsApp"><i class="fab fa-square-whatsapp"></i></a>
+		<a href="#" class="twitter" title="Twitter"><i class="fab fa-square-twitter"></i></a>
+		<a href="#" class="linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+		<a href="#" class="instagram" title="Instagram"><i class="fab fa-square-instagram"></i></a>
+	</div>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img style="width: 50px;" src="imgs/tesla-logo.png" alt="">
+				</a>
+				<svg style="width:150px;" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+					<path fill="#000000"
+						d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7">
+					</path>
+				</svg>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class=" collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="vr mx-3 d-lg-block d-none "></div>
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-outline-primary" type="submit">Search</button>
+						<button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">Login</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header bg-primary text-white">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label  text-primary">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+								<label class="form-check-label" for="checkNativeSwitch">
+									Remember Me
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer justify-content-between">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="carouselExampleCaptions" class="carousel slide bg-danger">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="imgs/caro1.png" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-block rounded" style="background-color: rgba(0, 0, 0, 0.363);">
+						<h1>First slide label</h1>
+						<p>Some representative placeholder content for the first slide.</p>
+						<button class="btn btn-primary">Visit Us</button>
+
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="imgs/caro2.png" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-block rounded" style="background-color: rgba(0, 0, 0, 0.363);">
+						<h1>First slide label</h1>
+						<p>Some representative placeholder content for the first slide.</p>
+						<button class="btn btn-primary">Visit Us</button>
+
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="imgs/caro3.png" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-block rounded" style="background-color: rgba(0, 0, 0, 0.363);">
+						<h1>First slide label</h1>
+						<p>Some representative placeholder content for the first slide.</p>
+						<button class="btn btn-primary">Visit Us</button>
+
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<div class="card p-3 text-white rounded-bottom " style="border-radius: 0%; background-color: #468df8;">
+			<div class="card-body">
+				<h5 class="card-title wavy h2">Special title treatment</h5>
+				<p class="card-text h5">With supporting text below as a natural lead-in to additional content.</p>
+				<a href="#" class="btn btn-light text-primary">Go somewhere</a>
+			</div>
+		</div>
+		<hr class="my-4" style="opacity: 1;" />
+		<div class="container-fluid center d-flex align-items-center rounded justify-content-center mb-4"
+			style="height: 150px; background-color: #468df8;">
+			<p class="h1 text-center text-white">Popular Destinations in Egypt</p>
+		</div>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button wavy h1" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						Tesla Model X
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+						collapse plugin adds the appropriate classes that we use to style each element. These classes
+						control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+						modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+						that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+						does limit overflow.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed wavy h1" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Tesla Model S
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+						collapse plugin adds the appropriate classes that we use to style each element. These classes
+						control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+						modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+						that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+						does limit overflow.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed wavy h1" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Tesla Model Y
+					</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+						collapse plugin adds the appropriate classes that we use to style each element. These classes
+						control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+						modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+						that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+						does limit overflow.
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4" style="opacity: 1;" />
+		<div class="container-fluid center d-flex align-items-center rounded justify-content-center mb-4"
+			style="height: 150px; background-color: #468df8;">
+			<p class="h1 text-center text-white">Translate From Arabic To English</p>
+		</div>
+		<div class="container-fluid p-4 rounded" style="background-color: #3a64a3;">
+			<p class="h3 text-white">Write and Translate <span class="h3" style="color: #100f1f">Press Here</span></p>
+			<button type="button" id="btn" class="btn btn-secondary btntoll" data-bs-toggle="tooltip"
+				data-bs-placement="right" data-bs-title="copy the text">Copy</button>
+			<textarea class="p-3 my-3" style="width: 100%; height: 25vh;" name="" id=""
+				placeholder="translate:"></textarea>
+		</div>
+		<hr class="my-4" style="opacity: 1;" />
+		<div class="container-fluid center d-flex align-items-center rounded justify-content-center mb-4"
+			style="height: 150px; background-color: #468df8;">
+			<p class="h1 text-center text-white">Translate From Arabic To French</p>
+		</div>
+		<div class="container-fluid p-4 rounded" style="background-color: #3a64a3;">
+			<p class="h3 text-white">Write and Translate <span class="h3" style="color: #100f1f">Press Here</span></p>
+			<button type="button" id="btn" class="btn btn-secondary btntoll" data-bs-toggle="tooltip"
+				data-bs-placement="right" data-bs-title="copy the text">Copy</button>
+			<textarea class="p-3 my-3" style="width: 100%; height: 25vh;" name="" id=""
+				placeholder="translate:"></textarea>
+		</div>
+		<hr class="my-4" style="opacity: 1;" />
+		<div class="container-fluid center d-flex align-items-center rounded justify-content-center mb-4"
+			style="height: 150px; background-color: #468df8;">
+			<p class="h1 text-center text-white">Translate From Arabic To German</p>
+		</div>
+		<div class="container-fluid p-4 rounded" style="background-color: #3a64a3;">
+			<p class="h3 text-white">Write and Translate <span class="h3" style="color: #100f1f">Press Here</span></p>
+			<button type="button" id="btn" class="btn btn-secondary btntoll" data-bs-toggle="tooltip"
+				data-bs-placement="right" data-bs-title="copy the text">Copy</button>
+			<textarea class="p-3 my-3" style="width: 100%; height: 25vh;" name="" id=""
+				placeholder="translate:"></textarea>
+		</div>
+		<hr class="my-4" style="opacity: 1;" />
+		<div class="container-fluid center d-flex align-items-center rounded justify-content-center mb-4"
+			style="height: 150px; background-color: #468df8;">
+			<p class="h1 text-center text-white">Translate From Arabic To Russian</p>
+		</div>
+		<div class="container-fluid p-4 rounded" style="background-color: #3a64a3;">
+			<p class="h3 text-white">Write and Translate <span class="h3" style="color: #100f1f">Press Here</span></p>
+			<button type="button" id="btn" class="btn btn-secondary btntoll" data-bs-toggle="tooltip"
+				data-bs-placement="right" data-bs-title="copy the text">Copy</button>
+			<textarea class="p-3 my-3" style="width: 100%; height: 25vh;" name="" id=""
+				placeholder="translate:"></textarea>
+		</div>
+		<hr class="my-4" style="opacity: 1;" />
+		<div class="container-fluid tesla-bg"></div>
+		<div class="container-fluid center d-flex align-items-center justify-content-center mb-4"
+			style="height: 150px; background-color: #468df8;">
+			<p class="h1 text-center wavy" style="text-transform: uppercase;">Popular Destinations in egypt</p>
+		</div>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 my-5">
+					<div class="card mx-auto" style="width: 100%; max-width: 25rem;">
+						<img src="imgs/card1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="card-row py-3"
+								style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+								<h5 class="card-title">Tesla Model X</h5>
+								<a href=" #" class="btn btn-primary">Shop</a>
+							</div>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card’s content.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="my-4" style="opacity: 1;" />
+			<div class="container-fluid tesla-bg"></div>
+
+			<hr class="my-4" style="opacity: 1;" />
+			<div class="container-fluid center d-flex align-items-center justify-content-center mb-4"
+				style="height: 150px; background-color: #468df8;">
+				<p class="h1 text-center wavy" style="text-transform: uppercase;">Thanks For</p>
+			</div>
+			<hr class="my-4" style="opacity: 1;" />
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="d-flex justify-content-center col-lg-4">
+						<div class="tyuser">
+							<div class="content text-white ">
+								<div class="header">
+									<p class="h2">All thanks</p>
+									<p>October 16,2020</p>
+								</div>
+								<div class="body">
+									<img src="imgs/user1.jpg" alt="" class="img-thumbnail" style="border-radius: 50%;">
+									<p class="h4">Eng.Islam Mohamed</p>
+									<p class="h5">UI/UX</p>
+								</div>
+								<div class="overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center col-lg-4">
+						<div class="tyuser">
+							<div class="content text-white ">
+								<div class="header ">
+									<p class="h2">All thanks</p>
+									<p>October 16,2020</p>
+								</div>
+								<div class="body">
+									<img src="imgs/user1.jpg" alt="" class="img-thumbnail" style="border-radius: 50%;">
+									<p class="h4">Eng.Islam Mohamed</p>
+									<p class="h5">UI/UX</p>
+								</div>
+								<div class="overlay"></div>
+
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center col-lg-4">
+						<div class="tyuser">
+							<div class="content  text-white ">
+								<div class="header">
+									<p class="h2">All thanks</p>
+									<p>October 16,2020</p>
+								</div>
+								<div class="body">
+									<img src="imgs/user1.jpg" alt="" class="img-thumbnail" style="border-radius: 50%;">
+									<p class="h4">Eng.Islam Mohamed</p>
+									<p class="h5">UI/UX</p>
+								</div>
+								<div class="overlay"></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="my-4" style="opacity: 1;" />
+
+
+			<div class="container-fluid">
+				<p class="text-center wavy h1 my-5">Egypt News</p>
+				<div class="container border podcont">
+					<div class="row flex-md-row-reverse">
+						<div class="col-md-4 p-0">
+							<img src="imgs/caro3.png" alt="" class="img-fluid h-100 podcastimg">
+						</div>
+						<div class="col-md-8 p-5">
+							<p class="h1">Podcast Title</p>
+							<p class="line"><i class="fa-solid fa-calendar"></i> Mon. May 25th 2020</p>
+							<p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil ex at
+								magnam.
+								Itaque
+								consequuntur sint vero. Mollitia, quia distinctio porro deleniti, atque exercitationem
+								soluta
+								cupiditate modi ab, voluptate debitis?
+								Pariatur ducimus deleniti dicta obcaecati voluptatibus labore consequatur soluta,
+								commodi,
+								mollitia
+								placeat asperiores in repudiandae, sint voluptas aliquid non quas ratione dolores
+								recusandae.
+								Reprehenderit perferendis magnam distinctio quam inventore repellat?</p>
+							<div class="btn-group mt-3" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-tag"></i>
+									Podcast</button>
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-clock"></i>
+									55 mins</button>
+								<button type="button" class="btn btn-secondary text-info"><i
+										class="fa-solid fa-play"></i>
+									Play</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" style="opacity: 0;" />
+
+				<div class="container border podcont">
+					<div class="row">
+						<div class="col-md-4 p-0">
+							<img src="imgs/caro3.png" alt="" class="img-fluid h-100 podcastimgrev">
+						</div>
+						<div class="col-md-8 p-5">
+							<p class="h1">Podcast Title</p>
+							<p class="line"><i class="fa-solid fa-calendar"></i> Mon. May 25th 2020</p>
+							<p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil ex at
+								magnam.
+								Itaque
+								consequuntur sint vero. Mollitia, quia distinctio porro deleniti, atque exercitationem
+								soluta
+								cupiditate modi ab, voluptate debitis?
+								Pariatur ducimus deleniti dicta obcaecati voluptatibus labore consequatur soluta,
+								commodi,
+								mollitia
+								placeat asperiores in repudiandae, sint voluptas aliquid non quas ratione dolores
+								recusandae.
+								Reprehenderit perferendis magnam distinctio quam inventore repellat?</p>
+							<div class="btn-group mt-3" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-tag"></i>
+									Podcast</button>
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-clock"></i>
+									55 mins</button>
+								<button type="button" class="btn btn-secondary text-info"><i
+										class="fa-solid fa-play"></i>
+									Play</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" style="opacity: 0;" />
+
+				<div class="container border podcont">
+					<div class="row flex-md-row-reverse">
+						<div class="col-md-4 p-0">
+							<img src="imgs/caro3.png" alt="" class="img-fluid h-100 podcastimg">
+						</div>
+						<div class="col-md-8 p-5">
+							<p class="h1">Podcast Title</p>
+							<p class="line"><i class="fa-solid fa-calendar"></i> Mon. May 25th 2020</p>
+							<p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil ex at
+								magnam.
+								Itaque
+								consequuntur sint vero. Mollitia, quia distinctio porro deleniti, atque exercitationem
+								soluta
+								cupiditate modi ab, voluptate debitis?
+								Pariatur ducimus deleniti dicta obcaecati voluptatibus labore consequatur soluta,
+								commodi,
+								mollitia
+								placeat asperiores in repudiandae, sint voluptas aliquid non quas ratione dolores
+								recusandae.
+								Reprehenderit perferendis magnam distinctio quam inventore repellat?</p>
+							<div class="btn-group mt-3" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-tag"></i>
+									Podcast</button>
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-clock"></i>
+									55 mins</button>
+								<button type="button" class="btn btn-secondary text-info"><i
+										class="fa-solid fa-play"></i>
+									Play</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" style="opacity: 0;" />
+
+				<div class="container border podcont">
+					<div class="row">
+						<div class="col-md-4 p-0">
+							<img src="imgs/caro3.png" alt="" class="img-fluid h-100 podcastimgrev">
+						</div>
+						<div class="col-md-8 p-5">
+							<p class="h1">Podcast Title</p>
+							<p class="line"><i class="fa-solid fa-calendar"></i> Mon. May 25th 2020</p>
+							<p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil ex at
+								magnam.
+								Itaque
+								consequuntur sint vero. Mollitia, quia distinctio porro deleniti, atque exercitationem
+								soluta
+								cupiditate modi ab, voluptate debitis?
+								Pariatur ducimus deleniti dicta obcaecati voluptatibus labore consequatur soluta,
+								commodi,
+								mollitia
+								placeat asperiores in repudiandae, sint voluptas aliquid non quas ratione dolores
+								recusandae.
+								Reprehenderit perferendis magnam distinctio quam inventore repellat?</p>
+							<div class="btn-group mt-3" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-tag"></i>
+									Podcast</button>
+								<button type="button" class="btn btn-secondary text-black"><i
+										class="fa-solid fa-clock"></i>
+									55 mins</button>
+								<button type="button" class="btn btn-secondary text-info"><i
+										class="fa-solid fa-play"></i>
+									Play</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="my-4" style="opacity: 1;" />
+			<div class="container-fluid">
+				<div class="container">
+					<p class="text-center wavy h1 my-5">Social Media</p>
+					<div class="row">
+						<div class=" col-lg-3 col-md-6 ">
+							<div class="socialcard border mx-auto d-flex flex-column align-items-center">
+								<p style="color: #468df8;" class="h3 my-3">Subscribe Now</p>
+								<i style="font-size: 8rem;" class="fa-brands fa-square-facebook my-4 text-primary"></i>
+								<p class="h5 my-3">Go to link</p>
+							</div>
+						</div>
+						<div class=" col-lg-3 col-md-6 ">
+							<div class="socialcard border mx-auto d-flex flex-column align-items-center">
+								<p style="color: #468df8;" class="h3 my-3">Subscribe Now</p>
+								<i style="font-size: 8rem;" class="fa-brands fa-square-whatsapp  my-4 text-success"></i>
+								<p class="h5 my-3">Go to link</p>
+							</div>
+						</div>
+						<div class=" col-lg-3 col-md-6 ">
+							<div class="socialcard border mx-auto d-flex flex-column align-items-center">
+								<p style="color: #468df8;" class="h3 my-3">Subscribe Now</p>
+								<i style="font-size: 8rem;" class="fa-brands fa-linkedin  my-4 text-primary"></i>
+								<p class="h5 my-3">Go to link</p>
+							</div>
+						</div>
+						<div class=" col-lg-3 col-md-6 ">
+							<div class="socialcard border mx-auto d-flex flex-column align-items-center">
+								<p style="color: #468df8;" class="h3 my-3">Subscribe Now</p>
+								<i style="font-size: 8rem;" class="fa-brands fa-square-instagram  my-4 text-danger"></i>
+								<p class="h5 my-3">Go to link</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="my-4" style="opacity: 1;" />
+			<div class="container-fluid text-white" style="background-color: #468df8;">
+				<div class="row justify-content-center align-items-center g-2">
+					<div class="col-md-4">
+						<hr class="my-4" style="opacity: 1;" />
+						<div class="content d-flex align-items-center justify-content-center"><img
+								src="imgs/tesla-logo.png" alt="" height="100" width="100">
+							<p class="h3"> Good Company</p>
+						</div>
+						<hr class="my-4" style="opacity: 1;" />
+						<div class="d-flex justify-content-center">
+							<div class="text d-flex flex-column justify-content-center">
+								<p class="h5 ">Tel :000-000-000</p>
+								<p class="h5">Address : Egypt</p>
+								<p class="h5 ">Fax :000-000-000</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gx-5">
+						<hr class="my-4" style="opacity: 1;" />
+						<div class="content d-flex align-items-center justify-content-center"><img
+								src="imgs/tesla-logo.png" alt="" height="100" width="100">
+							<p class="h3"> Good Company</p>
+						</div>
+						<hr class="my-4" style="opacity: 1;" />
+						<div class="d-flex justify-content-center">
+							<div class="text d-flex flex-column justify-content-center">
+								<p class="h5 ">Tel :000-000-000</p>
+								<p class="h5">Address : Egypt</p>
+								<p class="h5 ">Fax :000-000-000</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<hr class="my-4" style="opacity: 1;" />
+						<div class="content d-flex align-items-center justify-content-center"><img
+								src="imgs/tesla-logo.png" alt="" height="100" width="100">
+							<p class="h3"> Good Company</p>
+						</div>
+						<hr class="my-4" style="opacity: 1;" />
+						<div class="d-flex justify-content-center">
+							<div class="text d-flex flex-column justify-content-center">
+								<p class="h5 ">Tel :000-000-000</p>
+								<p class="h5">Address : Egypt</p>
+								<p class="h5 ">Fax :000-000-000</p>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4" style="opacity: 1;" />
+					<p class="h1 text-center wavyOP" style="text-transform: uppercase;"> copyright &copy; 2025 Tesla, All
+						rights
+					</p>
+					<hr class="my-4" style="opacity: 1;" />
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+		crossorigin="anonymous"></script>
+	<script>
+		const btnList = document.getElementsByClassName("btntoll");
+
+		Array.from(btnList).forEach(element => {
+			let tooltip = new bootstrap.Tooltip(element);
+
+			element.onclick = function () {
+				element.setAttribute("data-bs-title", "Copied");
+				element.setAttribute("title", "Copied");
+
+				tooltip.dispose();
+				tooltip = new bootstrap.Tooltip(element);
+				tooltip.show();
+			};
+
+			element.onmouseleave = function () {
+				element.setAttribute("data-bs-title", "copy the text");
+				element.setAttribute("title", "copy the text");
+
+				tooltip.dispose();
+				tooltip = new bootstrap.Tooltip(element);
+			};
+		});
+	</script>
+
+
+
+</body>
+
+</html>
